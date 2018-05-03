@@ -14,6 +14,8 @@
 
 \subsection{Tank}
 
+
+
 large grey plastic vessel
 
 Should we line the inner surface? Stan has been investigating various
@@ -25,19 +27,34 @@ needs investigation into water compatibility and possible emanation
 
 
 
-\subsection{Mechanical System}
-frame
-
-two gantries
-
-use M11 control room
+\subsection{Mechanical Gantry System}
 
 
+As noted before in the introduction, the PTF measurements are made by moving a pair of optical heads to
+different positions to illuminate the 20\" PMT.  This motion is accomplished by having the optical heads be on
+a pair of moveable gantries.  The gantries provide movement in five different axes: X, Y, Z, rotation and tilt.
+The X, Y and Z motion is on three separate linear stages driven by stepper motors,
+with the dimensions of the stages being XXXYYY, XXXYYY
+and XXXYYY.  The tilt motion is provided by a rotary stage; the tilt motion of the optical head is
+provided by a XXXYYY driven by a stepper motor.
+This is all shown diagramatically in Figure XXXYYY; these elements are all duplicated for
+the two gantries.  The gantry motors are controlled by a Galil 8143 motor controller; the controller is configured
+over an ethernet link.  The configuration is handled in a MIDAS program and webpage, described in Section
+\ref{Sec:DAQ_Controls}.
+
+Limit switches provide some degree of protection against collisions.  But the two gantries can
+be moved into the same space; so additional higher-level collision avoidance has been
+programmed into the software control programs.
+
+
+
+Various tests have been performed to understand the reproducibility of the gantry motion.  This tests have shown
+XXXYYY
 
 
 
 
-\subsection{Gantry System}
+
 
 \subsection{Optical System/Head}
 
@@ -52,7 +69,8 @@ how to manipulate?
 new sources?
 
 
-\subsection{Optisch Fibre}
+
+\subsection{Optical Fibre}
 ideal wavelength range is 350--650~nm
 
 consider bending radius
@@ -71,6 +89,7 @@ fibre must reach several metres from laser through manipulator to the
 optical head
 
 how to mount, etc. to prevent tangles, excessive bending, etc.
+
 
 \subsection{Magnetic Field Compensation}
 
@@ -130,7 +149,8 @@ degassification is a major item
 
 
 \subsection{DAQ/Controls}
-\label{}
+\label{Sec:DAQ_Controls}
+
 
 collision avoidance is in place and working
 
@@ -139,6 +159,8 @@ collision avoidance in the xz-plane will be necessary once a PMT is in place
 further testing and refinement will take about 1 week
 
 how to mount PMTs in the tank
+
+
 
 
 \subsection{Photosensor}
