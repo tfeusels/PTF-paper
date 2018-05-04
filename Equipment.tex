@@ -69,6 +69,20 @@ how to manipulate?
 new sources?
 
 
+\subsubsection{Phidget Accelerometer and Magnetometer}
+
+The optiocal heads also contain small electronic cards with 3-axis accelerometers and
+magnetometers.  These cards are Phidget 1044 boards, which are readout by USB \cite{PhidgetRef}.
+We use the accelerometer to measure the tilt of the optical head; the tilt drive system
+otherwise has no other system for measuring the tilt.
+
+The magnetometer is used to measure the magnetic field near the 20\" PMT.  We use the Phidget
+readings to ensure that we are correctly cancelling the ambient magnetic field, as described
+in more detail in Section \ref{Sec:MagFieldCompensation}.
+One problem with the Phidgets is that magnetometers are not designed for high precision or accuracy  measurements.
+We therefore find that, even after the calibration procedure specified by Phidget, that the
+magnetic field measurements only have an accuracy of XXXYYY mG.
+
 
 \subsection{Optical Fibre}
 ideal wavelength range is 350--650~nm
@@ -92,7 +106,7 @@ how to mount, etc. to prevent tangles, excessive bending, etc.
 
 
 \subsection{Magnetic Field Compensation}
-
+\label{Sec:MagFieldCompensation}
 assess magnetic shielding, magnetic compensation
 
 GIRON magnetic shielding (http://www.lessemf.com/)
@@ -129,15 +143,10 @@ Magnetic field scans:
 
 \subsection{Light Tightness/Dark room}
 
-Stan
-
-caulking
-
-air vent light baffles
-
-painting
-
-curtains
+The gantry system is surrounded by a double set of heavy black
+curtains on a overhead rail.  The black curtains provided light tightness.
+As an additional darkening step, the lights in the rest of the PTF room
+are turned off whenever the 20\" PMT is powered on.
 
 
 \subsection{Water System}
@@ -150,6 +159,30 @@ degassification is a major item
 
 \subsection{DAQ/Controls}
 \label{Sec:DAQ_Controls}
+
+The PTF DAQ uses the MIDAS framework \cite{MIDASRef}.  The main goals of the PTF DAQ are
+
+\begin{enumerate}
+\item Control of the gantry motors and scan sequencing
+\item Digitization of the 20\" PMT and monitor PMT signals 
+\item Environmental monitoring
+\end{enumerate}
+
+We will describe in more detail each of these points in turn in the following sections.
+
+\subsubsection{Motor Control and Scan Sequencing}
+
+
+\subsubsection{PMT Signal Digitization}
+
+To digitize the signals from the 20\", monitor and receiver PMTs we use a fast waveform digitizer; specifically
+we use the 500 megasample per second V1730 Module from Caen \cite{V1730Ref}.  The fast, high precision digitization rate ensures that we
+are able to accurately measure the time and charge for single photoelectron pulses from all the PMTs.
+
+
+\subsubsection{Environmental Monitoring}
+
+
 
 
 collision avoidance is in place and working
