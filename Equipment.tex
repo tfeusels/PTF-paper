@@ -114,11 +114,24 @@ The PTF is located a few hundred meters away from TRIUMF's cyclotron, which prod
 
 The magnetic field compensation set-up in the PTF involves passive compensation using GIRON sheets as magnetic shielding, as well as active compensation using three pairs of square coils, modelled after Helmholtz coils.
 
-The magnetic field conditions are constantly being monitored by the phidgets, devices that act as both magnetometers and accelerometers.
+The magnetic field conditions are constantly being monitored by the Phidgets, devices that act as both magnetometers and accelerometers.
 
 \subsubsection{Passive Compensation - GIRON Magnetic Shielding}
 
 The magnetic fields exhibit large gradients in each direction. The GIRON magnetic shielding helps reduce these gradients to make the magnetic field in each cross-sectional plane of the PTF more uniform.
+%
+\begin{figure}[htbp]
+  \begin{center}
+  \begin{tabular}{c c}
+  \includegraphics[width=0.45\textwidth]{bfield_0_no_compensation_vec.pdf}
+  \includegraphics[width=0.45\textwidth]{bfield_0_no_compensation_x.pdf} \\
+  \includegraphics[width=0.45\textwidth]{bfield_0_no_compensation_y.pdf}
+  \includegraphics[width=0.45\textwidth]{bfield_0_no_compensation_z.pdf} \\
+  \caption{Magnetic field conditions in the photosensor test facility (PTF) during cyclotron shutdown period, with no compensation}
+  \label{fig:bfield_gironeffects}
+  \end{center}
+\end{figure}
+%
 
 \subsubsection{Active Compensation - Helmholtz Coils}
 
