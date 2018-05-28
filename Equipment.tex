@@ -107,6 +107,29 @@ how to mount, etc. to prevent tangles, excessive bending, etc.
 
 \subsection{Magnetic Field Compensation}
 \label{Sec:MagFieldCompensation}
+
+The PMTs are sensitive to magnetic field conditions in its electron-path trajectory. For studies of the PMT response to be possible, the magnetic field in the PTF must be well-understood and controlled.
+
+The PTF is located a few hundred meters away from TRIUMF's cyclotron, which produces a magnetic field of around 1800 mG in magnitude in the PTF when turned on (Jaffray, 2016 - PTF Reference Manual). Even when the cyclotron is turned off, surrounding structural material in the building can be magnetized and affect the magnetic fields in the PTF.
+
+The magnetic field compensation set-up in the PTF involves passive compensation using GIRON sheets as magnetic shielding, as well as active compensation using three pairs of square coils, modelled after Helmholtz coils.
+
+The magnetic field conditions are constantly being monitored by the phidgets, devices that act as both magnetometers and accelerometers.
+
+\subsubsection{Passive Compensation - GIRON Magnetic Shielding}
+
+The magnetic fields exhibit large gradients in each direction. The GIRON magnetic shielding helps reduce these gradients to make the magnetic field in each cross-sectional plane of the PTF more uniform.
+
+\subsubsection{Active Compensation - Helmholtz Coils}
+
+Although the geometry of these coil pairs are not exactly that of Helmholtz coils (the coils are square instead of circular, and the distance between the coils are adjusted to accomodate for the movement of the gantries), the set-up has been thoroughly studied for the optimum voltage controlled magnetic fields.
+
+\subsubsection{Magnetic Field Studies}
+
+Since we are using GIRON magnetic shielding, the current-to-magnetic field relations are more challenging to quantify. The callibration of the magnetic field compensation was accomplished experimentally, by measuring the magnetic field in the lab using the phidgets and mapping the magnetic fields for different voltages across the Helmholtz coils. The voltage and current settings required to produce the different magnetic field conditions were recorded, and reproducibility was tested to ensure that the compensation is reliable when conducting experiments on the PMTs.
+
+***NOTES***
+
 assess magnetic shielding, magnetic compensation
 
 GIRON magnetic shielding (http://www.lessemf.com/)
