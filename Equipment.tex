@@ -118,27 +118,25 @@ The magnetic field conditions are constantly being monitored by the Phidgets, de
 
 \subsubsection{Passive Compensation - GIRON Magnetic Shielding}
 
-The magnetic fields exhibit large gradients in each direction. The GIRON magnetic shielding helps reduce these gradients to make the magnetic field in each cross-sectional plane of the PTF more uniform. Figure~\ref{fig:bfield_1gironeffects} shows how the gradient observed in z-component of the magnetic field in the PTF is reduced by $ 64\pm7\% $ by adding one layer of GIRON flooring (see~\ref{Appendix:MagneticFieldGradientCalculations} for calculations).
-Figure~\ref{fig:bfield_2gironeffects} shows that adding a second layer of GIRON flooring does not reduce the gradient in the magnetic field. Therefore a third layer was not added.
+The magnetic fields exhibit large gradients in each direction. The GIRON magnetic shielding helps reduce these gradients to make the magnetic field in each cross-sectional plane of the PTF more uniform. Figures~\ref{fig:bfield_gironeffects_a} and ~\ref{fig:bfield_gironeffects_b} show how the gradient observed in z-component of the magnetic field in the PTF is reduced by $ 64\pm7\% $ by adding one layer of GIRON flooring (see~\ref{Appendix:MagneticFieldGradientCalculations} for calculations).
+Figure~\ref{fig:bfield_gironeffects_c} shows that adding a second layer of GIRON flooring does not reduce the gradient in the magnetic field. Therefore a third layer was not added.
 %
 \begin{figure}[htbp]
   \begin{center}
-  \includegraphics[width=0.48\textwidth]{bfield_0_no_compensation_z_clrbaredit.pdf} 
-  \includegraphics[width=0.48\textwidth]{bfield_1_1layerGIRON_coilsOff_z_clrbaredit.pdf}
-  \caption{The z-component of the magnetic field with no GIRON flooring (left) and with one layer of GIRON flooring (right). The circle outlines the position of the 20-inch PMT when it is being measured in the PTF.}
-  \label{fig:bfield_1gironeffects}
-  \end{center}
-\end{figure}
-%
-\begin{figure}[htbp]
-  \begin{center}
+  \includegraphics[width=0.5\textwidth]{bfield_0_no_compensation_z_clrbaredit.pdf} 
+  \caption{No GIRON flooring}
+  \label{fig:bfield_gironeffects_a}
+  \includegraphics[width=0.5\textwidth]{bfield_1_1layerGIRON_coilsOff_z_clrbaredit.pdf}
+  \caption{One layer of GIRON flooring}
+  \label{fig:bfield_gironeffects_b}
   \includegraphics[width=0.5\textwidth]{bfield_2_2layerGIRON_coilsOff_z_clrbaredit.pdf}
-  \caption{The z-component of the magnetic field with two layers of GIRON flooring}
-  \label{fig:bfield_2gironeffects}
+  \caption{Two layers of GIRON flooring}
+  \label{fig:bfield_gironeffects_c}
+  \caption{The z-component of the magnetic field with no GIRON flooring (~\ref{fig:bfield_gironeffects_a}), with one layer of GIRON flooring (~\ref{fig:bfield_gironeffects_b}), and with two layers of GIRON flooring (~\ref{fig:bfield_gironeffects_c}). The circle outlines the position of the 20-inch PMT when it is being measured in the PTF.}
+  \label{fig:bfield_gironeffects}
   \end{center}
 \end{figure}
 %
-
 \subsubsection{Active Compensation - Helmholtz Coils}
 
 Although the geometry of these coil pairs are not exactly that of Helmholtz coils (the coils are square instead of circular, and the distance between the coils are adjusted to accomodate for the movement of the gantries), the set-up has been thoroughly studied for the optimum voltage controlled magnetic fields.
