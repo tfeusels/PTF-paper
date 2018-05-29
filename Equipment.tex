@@ -118,19 +118,19 @@ The magnetic field conditions are constantly being monitored by the Phidgets, de
 
 \subsubsection{Passive Compensation - GIRON Magnetic Shielding}
 
-The magnetic fields exhibit large gradients in each direction. The GIRON magnetic shielding helps reduce these gradients to make the magnetic field in each cross-sectional plane of the PTF more uniform. Figures~\ref{fig:bfield_gironeffects_a} and ~\ref{fig:bfield_gironeffects_b} show how the gradient observed in z-component of the magnetic field in the PTF is reduced by $ 64\pm7\% $ by adding one layer of GIRON flooring (see~\ref{Appendix:MagneticFieldGradientCalculations} for calculations).
-Figure~\ref{fig:bfield_gironeffects_c} shows that adding a second layer of GIRON flooring does not reduce the gradient in the magnetic field. Therefore a third layer was not added.
+The magnetic fields exhibit large gradients in each direction. The GIRON magnetic shielding helps reduce these gradients to make the magnetic field in each cross-sectional plane of the PTF more uniform. This is especially important for the z-component of the magnetic field, as the cyclotron at TRIUMF produces magnetic fields in the z-direction, and the magnitude of this magnetic field changes with the distance from the cyclotron, creating a gradient. Figures~\ref{fig:bfield_gironeffects_a} and~\ref{fig:bfield_gironeffects_b} show how the gradient observed in the z-component of the magnetic field in the PTF is reduced by $ 63\pm7\% $ by adding one layer of GIRON flooring (see~\ref{Appendix:MagneticFieldGradientCalculations} for calculations).
+Figure~\ref{fig:bfield_gironeffects_c} shows that adding a second layer of GIRON flooring does not reduce the gradient in the magnetic field; hence a third layer was not added.
 %
 \begin{figure}[htbp]
   \begin{center}
     \subfloat[No GIRON flooring\label{fig:bfield_gironeffects_a}]{
       \includegraphics[width=0.5\textwidth]{bfield_0_no_compensation_z_clrbaredit.pdf}
     }\\
-    \vspace{-10 mm}
+    \vspace{-5 mm}
     \subfloat[One layer of GIRON flooring\label{fig:bfield_gironeffects_b}]{
       \includegraphics[width=0.5\textwidth]{bfield_1_1layerGIRON_coilsOff_z_clrbaredit.pdf}
     }\\
-    \vspace{-10 mm}
+    \vspace{-5 mm}
     \subfloat[Two layers of GIRON flooring\label{fig:bfield_gironeffects_c}]{
       \includegraphics[width=0.5\textwidth]{bfield_2_2layerGIRON_coilsOff_z_clrbaredit.pdf}
     }
@@ -139,13 +139,39 @@ Figure~\ref{fig:bfield_gironeffects_c} shows that adding a second layer of GIRON
   \end{center}
 \end{figure}
 %
+
+As shown in Figure~\ref{fig:bfield_girioneffects}, the GIRON flooring helps reduce the magnetic field gradients in the x-y plane. Similarly, the GIRON sheets have been wrapped around the PTF tank into a cylindrical shape to help reduce the magnetic field gradients in the z-direction. Figure~\ref{fig:bfield_gironcylinder} shows how the gradient of the x-component of the magnetic field is reduced from $ 80\pm10 mG/m $ to almost no gradient in the z-direction with the cylinder in place.
+%
+\begin{figure}[htbp]
+  \begin{center}
+    \subfloat[Without GIRON cylinder around tank\label{fig:bfield_gironecylinder_a}]{
+      \includegraphics[width=0.5\textwidth]{bfield_3_2layerGIRON_coilsOn_x352_x.pdf}
+    }\\
+    \vspace{-5 mm}
+    \subfloat[With GIRON cylinder around tank\label{fig:bfield_gironcylinder_b}]{
+      \includegraphics[width=0.5\textwidth]{bfield_4_FullCompensation_x352_x.pdf}
+    }
+  \caption{The x-component of the magnetic field without the cylindrical GIRON shielding (\ref{fig:bfield_gironcylinder_a}), and with the cylindrical GIRON shielding around the PTF tank (\ref{fig:bfield_gironcylinder_b}). In both cases, there are two layers of GIRON flooring and the compensation coils are tuned to obtain a field of 0 mG at the center of the scan region.}
+  \label{fig:bfield_gironcylinder}
+  \end{center}
+\end{figure}
+%
+
 \subsubsection{Active Compensation - Helmholtz Coils}
+
+While passive compensation helps reduce the gradient in the magnetic field, active compensation with Helmholtz-like coils help reduce the magnitude of the magnetic field.
+
+The coil specifications are given in table~\ref{Tab:coil_specs}.
+
+The coils are protected on the outside by aluminum framing.
 
 Although the geometry of these coil pairs are not exactly that of Helmholtz coils (the coils are square instead of circular, and the distance between the coils are adjusted to accomodate for the movement of the gantries), the set-up has been thoroughly studied for the optimum voltage controlled magnetic fields.
 
 \subsubsection{Magnetic Field Studies}
 
-Since we are using GIRON magnetic shielding, the current-to-magnetic field relations are more challenging to quantify. The callibration of the magnetic field compensation was accomplished experimentally, by measuring the magnetic field in the lab using the phidgets and mapping the magnetic fields for different voltages across the Helmholtz coils. The voltage and current settings required to produce the different magnetic field conditions were recorded, and reproducibility was tested to ensure that the compensation is reliable when conducting experiments on the PMTs.
+Since we are using GIRON magnetic shielding, the current-to-magnetic field relations are more challenging to quantify. The callibration of the magnetic field compensation was accomplished experimentally, by measuring the magnetic field in the lab using the Phidgets and mapping the magnetic fields for different voltages across the Helmholtz coils. The voltage and current settings required to produce the different magnetic field conditions were recorded, and reproducibility was tested to ensure that the compensation is reliable when conducting experiments on the PMTs.
+
+Thorough magnetic field compensation procedures have been developed based on the tests, for when TRIUMF's cyclotron is on and off.
 
 ***NOTES***
 
