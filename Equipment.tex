@@ -110,7 +110,10 @@ how to mount, etc. to prevent tangles, excessive bending, etc.
 
 The PMTs are sensitive to magnetic field conditions in its electron-path trajectory. For studies of the PMT response to be possible, the magnetic field in the PTF must be well-understood and controlled.
 
-The PTF is located a few hundred meters away from TRIUMF's cyclotron, which produces a magnetic field of around 1800 mG in magnitude in the PTF when turned on. Even when the cyclotron is turned off, surrounding structural material in the building can be magnetized and affect the magnetic fields in the PTF.
+The PTF is located a few hundred meters away from TRIUMF's cyclotron, which produces a magnetic field of around 1800 mG in magnitude in the PTF when turned on. Ev
+en when the cyclotron is turned off, surrounding structural material in the building can be magnetized and affect the magnetic fields in the PTF. 
+
+Thorough magnetic field compensation procedures have been developed based on the tests, for both when TRIUMF's cyclotron is on and off.
 
 The magnetic field compensation set-up in the PTF involves passive compensation using GIRON sheets as magnetic shielding, as well as active compensation using three pairs of square coils, modelled after Helmholtz coils.
 
@@ -118,10 +121,10 @@ The magnetic field conditions are constantly being monitored by the Phidgets, de
 
 \subsubsection{Passive Compensation - GIRON Magnetic Shielding}
 
-The magnetic fields exhibit large gradients in each direction. The GIRON magnetic shielding helps reduce these gradients to make the magnetic field in each cross-sectional plane of the PTF more uniform. This is especially important for the z-component of the magnetic field, as the cyclotron at TRIUMF produces magnetic fields in the z-direction, and the magnitude of this magnetic field changes with the distance from the cyclotron, creating a gradient.
+The magnetic fields exhibit large gradients in each direction. The GIRON magnetic shielding helps reduce these gradients to make the magnetic field in each cross-sectional plane of the PTF more uniform. This is especially important for the z-component of the magnetic field, as the cyclotron at TRIUMF produces magnetic fields in the z-direction, and the magnitude of this magnetic field changes with the distance from the cyclotron, thereby creating a gradient.
 
 The GIRON sheets were purchased from Less EMF \cite{lessemf}. Figures~\ref{fig:bfield_gironeffects_a} and~\ref{fig:bfield_gironeffects_b} show how the gradient observed in the z-component of the magnetic field in the PTF is reduced by $ 63\pm7\% $ by adding one layer of GIRON flooring (see~\ref{Appendix:MagneticFieldGradientCalculations} for calculations).
-Figure~\ref{fig:bfield_gironeffects_c} shows that adding a second layer of GIRON flooring does not reduce the gradient in the magnetic field; hence a third layer was not added.
+Figure~\ref{fig:bfield_gironeffects_c} shows that adding a second layer of GIRON flooring does not reduce the gradient in the magnetic field. The main reason for keeping the second layer of GIRON flooring is to ensure that there are no gaps between the GIRON sheets.
 %
 \begin{figure}[htbp]
   \begin{center}
@@ -142,11 +145,11 @@ Figure~\ref{fig:bfield_gironeffects_c} shows that adding a second layer of GIRON
 \end{figure}
 %
 
-As shown in Figure~\ref{fig:bfield_gironeffects}, the GIRON flooring helps reduce the magnetic field gradients in the x-y plane. Similarly, the GIRON sheets have been wrapped around the PTF tank into a cylindrical shape, as shown in Figure~\ref{fig:coils} to help reduce the magnetic field gradients in the z-direction. Figure~\ref{fig:bfield_gironcylinder} shows how the gradient of the x-component of the magnetic field is reduced from $ 80\pm10 mG/m $ to almost no gradient in the z-direction with the cylinder in place.
+As shown in Figure~\ref{fig:bfield_gironeffects}, the GIRON flooring helps reduce the magnetic field gradients in the x-y plane. Similarly, GIRON sheets have been wrapped around the PTF tank into a cylindrical shape, as shown in Figure~\ref{fig:coils} to help reduce the magnetic field gradients in the z-direction. Figure~\ref{fig:bfield_gironcylinder} shows how the gradient of the x-component of the magnetic field is reduced from $ 80\pm10 mG/m $ to almost no gradient in the z-direction with the cylinder in place.
 %
 \begin{figure}[htbp]
   \begin{center}
-    \subfloat[Without GIRON cylinder around tank\label{fig:bfield_gironecylinder_a}]{
+    \subfloat[Without GIRON cylinder around tank\label{fig:bfield_gironcylinder_a}]{
       \includegraphics[width=0.5\textwidth]{bfield_3_2layerGIRON_coilsOn_x352_x.pdf}
     }\\
     \vspace{-3 mm}
@@ -177,9 +180,9 @@ Detailed coil specifications are given in table~\ref{tab:coil_specs}.
 %
 \begin{table}[h]
 \begin{center}
-  \begin{tabular}{|c||c c c c|}
+  \begin{tabular}{|c|c c c c|}
     \hline
-    Coil number & Side length (cm) & Wire (AWG) & Number of turns & Resistance ($\omega$)\\
+    Coil number & Side length (cm) & Wire (AWG) & Number of turns & Resistance ($\Omega$)\\
     \hline\hline
     1 & 189 & 14 & 52 & 3.8 \\
     2 & 189 & 14 & 52 & 3.8 \\
@@ -187,6 +190,7 @@ Detailed coil specifications are given in table~\ref{tab:coil_specs}.
     4 & 196 & 14 & 52 & 3.9 \\
     5 & 204 & 12 & 260 & 11.1 \\
     6 & 204 & 12 & 260 & 11.1 \\
+    \hline
   \end{tabular}
 \end{center}
 \caption{Compensation coil specifications}
@@ -199,9 +203,18 @@ Although the geometry of these coil pairs are not exactly that of Helmholtz coil
 
 \subsubsection{Magnetic Field Studies}
 
-Since we are using GIRON magnetic shielding, the current-to-magnetic field relations are more challenging to quantify. The callibration of the magnetic field compensation was accomplished experimentally, by measuring the magnetic field in the lab using the Phidgets and mapping the magnetic fields for different voltages across the Helmholtz coils. The voltage and current settings required to produce the different magnetic field conditions were recorded, and reproducibility was tested to ensure that the compensation is reliable when conducting experiments on the PMTs.
+The use of GIRON magnetic shielding makes it more challenging to quantify the current-to-magnetic-field relations in the PTF. Likewise, calibration of the compensation coils was accomplished experimentally.
 
-Thorough magnetic field compensation procedures have been developed based on the tests, for when TRIUMF's cyclotron is on and off.
+The magnetic fields were mapped using a Phidget, in a volume measuring 0.5 m by 0.5 m by 0.4 m centered about the point where the center of the 20-inch PMT's electron-path trajectory would lie. 
+One of the Phidgets was placed at the position where the center of the PMT's electron-path trajectory would lie, and the voltage across each coil was tuned so that the Phidget measured a magnetic field value of $0\pm5$ mG. The magnetic field was then mapped using the Phidget, in a volume measuring 0.5 m by 0.5 m by 0.4 m, centered about the same point.
+The voltage and current settings required to produce the different magnetic field conditions were recorded, and reproducibility was tested to ensure that the compensation is reliable when conducting experiments on the PMTs.
+
+\subsubsection{Degaussing}
+
+
+\subsubsection{Reproducibility}
+
+
 
 
 ***NOTES***
