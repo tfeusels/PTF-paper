@@ -197,23 +197,30 @@ Detailed coil specifications are given in table~\ref{tab:coil_specs}.
 \label{tab:coil_specs}
 \end{table}
 %
-The coils are protected on the outside by aluminum framing. The position of the coils are also fixed with respect to this aluminum framing, and with one another (see~\ref{Appendix:CoilPositions} for a diagram of the precise coil positions).
+The coils are protected on the outside by aluminum framing. The position of the coils are also fixed with respect to this aluminum framing, and with one another (see Appendix~\ref{Appendix:CoilPositions} for a diagram of the precise coil positions).
 
 Although the geometry of these coil pairs are not exactly that of Helmholtz coils (the coils are square instead of circular, and the distance between the coils are adjusted to accomodate for the movement of the gantries), the set-up has been thoroughly studied for the optimum voltage controlled magnetic fields.
 
 \subsubsection{Magnetic Field Studies}
 
-The use of GIRON magnetic shielding makes it more challenging to quantify the current-to-magnetic-field relations in the PTF. Likewise, calibration of the compensation coils was accomplished experimentally.
+The use of GIRON magnetic shielding makes it more challenging to quantify the current-to-magnetic-field relations in the PTF. Likewise, calibration of the compensation coils was accomplished through detailed experimentation.
 
-The magnetic fields were mapped using a Phidget, in a volume measuring 0.5 m by 0.5 m by 0.4 m centered about the point where the center of the 20-inch PMT's electron-path trajectory would lie. 
-One of the Phidgets was placed at the position where the center of the PMT's electron-path trajectory would lie, and the voltage across each coil was tuned so that the Phidget measured a magnetic field value of $0\pm5$ mG. The magnetic field was then mapped using the Phidget, in a volume measuring 0.5 m by 0.5 m by 0.4 m, centered about the same point.
-The voltage and current settings required to produce the different magnetic field conditions were recorded, and reproducibility was tested to ensure that the compensation is reliable when conducting experiments on the PMTs.
+The magnetic fields are mapped at 5-cm intervals in a volume of 0.5 m by 0.5 m by 0.4 m. This scan volume is centered about the center point of the PMT, which is considered to be the center of the 20-inch PMT's electron-path trajectory, where the PMT's cross-sectional diameter is largest. In this way, the scan volume represents the internal volume of the 20-inch PMT.
+
+Figures~\ref{fig:bfield_gironeffects} and \ref{fig:bfield_gironcylinder} are examples of the plots produced through these mangetic field scans. Appendix~\ref{Appendix:MagneticFieldScanPlots} contains a few more plots for reference.
+
+The tuning of the coil currents was done by placing one of the Phidgets at the center of the scan volume and adjusting the currents so that the Phidget measures a magnetic field value of $0\pm5$ mG. The Phidget is then moved around the scan volume to map the magnetic field and ensure that the fields would be uniform throughout the PMT volume.
+
+The magnetic field studies show that the final magnetic-filed-compensation set up, with GIRON flooring and a cylindrical GIRON shield around the tank coupled with compensation coils, produces a uniform magnetic field within the scan volume for both when the cyclotron is turned on and off. The coil current settings for full compensation have been recorded, and  the reproducibility has also been tested to show that the magnetic fields in the entire scan volume can be reproduced to within $\pm7$ mG.
+
 
 \subsubsection{Degaussing}
 
+GIRON exhibits magnetic hysteresis: once GIRON is magnetized, simply applying a magnetic field in the opposite direction is not enough to demagnetize GIRON, as some of the magnetic dipoles in the GIRON remain. Therefore a systematic degaussingprocedure was developed to demagnetize the GIRON shielding using the compensation coils.
 
-\subsubsection{Reproducibility}
+Degaussing involves removing the non-random magnetic dipoles in the GIRON shielding by exposing it to external magnetic fields that are alternating in direction. The magnitude of this alternating field is gradually reduced so that the PMT volume eventually reaches a state in which the magnetic fields are of zero magnitude.
 
+The systematic degaussing procedure has proven to be a reliable method that guarantees reproducible magnetic field conditions. 
 
 
 
