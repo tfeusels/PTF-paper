@@ -110,20 +110,15 @@ how to mount, etc. to prevent tangles, excessive bending, etc.
 
 The PMTs are sensitive to magnetic field conditions in its electron-path trajectory. For studies of the PMT response to be possible, the magnetic field in the PTF must be well-understood and controlled.
 
-The PTF is located a few hundred meters away from TRIUMF's cyclotron, which produces a magnetic field of around 1800 mG in magnitude in the PTF when turned on. Ev
-en when the cyclotron is turned off, surrounding structural material in the building can be magnetized and affect the magnetic fields in the PTF. 
+The PTF is located a few hundred meters away from TRIUMF's cyclotron, which produces a magnetic field of around 1800 mG in magnitude in the PTF when turned on. Even when the cyclotron is turned off, surrounding structural material in the building can be magnetized and affect the magnetic fields in the PTF. 
 
-Thorough magnetic field compensation procedures have been developed based on the tests, for both when TRIUMF's cyclotron is on and off.
-
-The magnetic field compensation set-up in the PTF involves passive compensation using GIRON sheets as magnetic shielding, as well as active compensation using three pairs of square coils, modelled after Helmholtz coils.
-
-The magnetic field conditions are constantly being monitored by the Phidgets, devices that act as both magnetometers and accelerometers.
+The magnetic field compensation set-up in the PTF involves passive compensation using GIRON sheets as magnetic shielding, as well as active compensation using three pairs of square coils, modelled after Helmholtz coils. Thorough magnetic field compensation procedures have been developed for both when TRIUMF's cyclotron is on and off, and the magnetic field is constantly being monitored by the Phidgets, devices that act as both magnetometers and accelerometers. 
 
 \subsubsection{Passive Compensation - GIRON Magnetic Shielding}
 
-The magnetic fields exhibit large gradients in each direction. The GIRON magnetic shielding helps reduce these gradients to make the magnetic field in each cross-sectional plane of the PTF more uniform. This is especially important for the z-component of the magnetic field, as the cyclotron at TRIUMF produces magnetic fields in the z-direction, and the magnitude of this magnetic field changes with the distance from the cyclotron, thereby creating a gradient.
+The magnetic fields in the PTF exhibit large gradients in each direction. The GIRON magnetic shielding helps reduce these gradients to make the magnetic field in the PMT volume more uniform. This is especially important for the z-component of the magnetic field, as the cyclotron at TRIUMF produces large magnetic fields in the z-direction. The magnitude of this magnetic field changes with the distance from the cyclotron, thereby creating a gradient.
 
-The GIRON sheets were purchased from Less EMF \cite{lessemf}. Figures~\ref{fig:bfield_gironeffects_a} and~\ref{fig:bfield_gironeffects_b} show how the gradient observed in the z-component of the magnetic field in the PTF is reduced by $ 63\pm7\% $ by adding one layer of GIRON flooring (see~\ref{Appendix:MagneticFieldGradientCalculations} for calculations).
+The GIRON sheets were purchased from Less EMF. Figures~\ref{fig:bfield_gironeffects_a} and~\ref{fig:bfield_gironeffects_b} show how the gradient observed in the z-component of the magnetic field in the PTF is reduced by $ 63\pm7\% $ by adding one layer of GIRON flooring (see~\ref{Appendix:MagneticFieldGradientCalculations} for calculations).
 Figure~\ref{fig:bfield_gironeffects_c} shows that adding a second layer of GIRON flooring does not reduce the gradient in the magnetic field. The main reason for keeping the second layer of GIRON flooring is to ensure that there are no gaps between the GIRON sheets.
 %
 \begin{figure}[htbp]
@@ -139,7 +134,7 @@ Figure~\ref{fig:bfield_gironeffects_c} shows that adding a second layer of GIRON
     \subfloat[Two layers of GIRON flooring\label{fig:bfield_gironeffects_c}]{
       \includegraphics[width=0.5\textwidth]{bfield_2_2layerGIRON_coilsOff_z_clrbaredit.pdf}
     }
-  \caption{The z-component of the magnetic field in the x-y plane with: no GIRON flooring (\ref{fig:bfield_gironeffects_a}), one layer of GIRON flooring (\ref{fig:bfield_gironeffects_b}), and two layers of GIRON flooring (\ref{fig:bfield_gironeffects_c}). The circle outlines the position of the 20-inch PMT when it is being measured in the PTF.}
+  \caption{Plots of the z-component of the magnetic field in the x-y plane containing the center of the PMT volume, with: no GIRON flooring (\ref{fig:bfield_gironeffects_a}), one layer of GIRON flooring (\ref{fig:bfield_gironeffects_b}), and two layers of GIRON flooring (\ref{fig:bfield_gironeffects_c}). The circle outlines the position of the 20-inch PMT when it is being measured in the PTF. The GIRON flooring helps reduce the magnetic field gradient along the x-y plane.}
   \label{fig:bfield_gironeffects}
   \end{center}
 \end{figure}
@@ -156,7 +151,7 @@ As shown in Figure~\ref{fig:bfield_gironeffects}, the GIRON flooring helps reduc
     \subfloat[With GIRON cylinder around tank\label{fig:bfield_gironcylinder_b}]{
       \includegraphics[width=0.5\textwidth]{bfield_4_FullCompensation_x352_x.pdf}
     }
-  \caption{The x-component of the magnetic field in the y-z plane without the cylindrical GIRON shielding (\ref{fig:bfield_gironcylinder_a}), and with the cylindrical GIRON shielding around the PTF tank (\ref{fig:bfield_gironcylinder_b}). In both cases, there are two layers of GIRON flooring and the compensation coils are tuned to obtain a field of 0 mG at the center of the scan region.}
+  \caption{Plots of the x-component of the magnetic field in the y-z plane containing the center of the PMT volume, without the cylindrical GIRON shielding (\ref{fig:bfield_gironcylinder_a}), and with the cylindrical GIRON shielding around the PTF tank (\ref{fig:bfield_gironcylinder_b}). In both cases, there are two layers of GIRON flooring and the compensation coils are tuned to obtain a field of 0 mG at the center of the scan region. The GIRON cylinder helps reduce the magnetic field gradient in the z-direction.}
   \label{fig:bfield_gironcylinder}
   \end{center}
 \end{figure}
@@ -197,7 +192,7 @@ Detailed coil specifications are given in table~\ref{tab:coil_specs}.
 \label{tab:coil_specs}
 \end{table}
 %
-The coils are protected on the outside by aluminum framing. The position of the coils are also fixed with respect to this aluminum framing, and with one another (see Appendix~\ref{Appendix:CoilPositions} for a diagram of the precise coil positions).
+The coils are protected on the outside by aluminum framing. The position of the coils are also fixed with respect to this aluminum framing, and with one another (see \ref{Appendix:CoilPositions} for a diagram of the precise coil positions).
 
 Although the geometry of these coil pairs are not exactly that of Helmholtz coils (the coils are square instead of circular, and the distance between the coils are adjusted to accomodate for the movement of the gantries), the set-up has been thoroughly studied for the optimum voltage controlled magnetic fields.
 
@@ -209,55 +204,50 @@ The magnetic fields are mapped at 5-cm intervals in a volume of 0.5 m by 0.5 m b
 
 Figures~\ref{fig:bfield_gironeffects} and \ref{fig:bfield_gironcylinder} are examples of the plots produced through these mangetic field scans. Appendix~\ref{Appendix:MagneticFieldScanPlots} contains a few more plots for reference.
 
-The tuning of the coil currents was done by placing one of the Phidgets at the center of the scan volume and adjusting the currents so that the Phidget measures a magnetic field value of $0\pm5$ mG. The Phidget is then moved around the scan volume to map the magnetic field and ensure that the fields would be uniform throughout the PMT volume.
+The tuning of the coil currents was done by placing one of the Phidgets at the center of the scan volume and adjusting the currents so that the Phidget measures a magnetic field value of 0 mG. The Phidget is then moved around the scan volume to map the magnetic field and ensure that the fields would be uniform throughout the PMT volume.
 
-The magnetic field studies show that the final magnetic-filed-compensation set up, with GIRON flooring and a cylindrical GIRON shield around the tank coupled with compensation coils, produces a uniform magnetic field within the scan volume for both when the cyclotron is turned on and off. The coil current settings for full compensation have been recorded, and  the reproducibility has also been tested to show that the magnetic fields in the entire scan volume can be reproduced to within $\pm7$ mG.
+The magnetic field studies show that the final magnetic-filed-compensation setup, with GIRON flooring and a cylindrical GIRON shield around the tank coupled with compensation coils, is ideal for producing uniform magnetic fields within the scan volume for both when the cyclotron is turned on and off. The coil current settings for full compensation have been recorded, and  the reproducibility has also been tested to show that the magnetic fields in the entire scan volume can be reproduced to within $\pm7$ mG.
 
 
 \subsubsection{Degaussing}
 
-GIRON exhibits magnetic hysteresis: once GIRON is magnetized, simply applying a magnetic field in the opposite direction is not enough to demagnetize GIRON, as some of the magnetic dipoles in the GIRON remain. Therefore a systematic degaussingprocedure was developed to demagnetize the GIRON shielding using the compensation coils.
+GIRON exhibits magnetic hysteresis: once GIRON is magnetized, simply applying a magnetic field in the opposite direction is not enough to demagnetize GIRON, as some of the magnetic dipoles in the GIRON remain. Therefore a systematic degaussing procedure was developed to demagnetize the GIRON shielding using the compensation coils.
 
 Degaussing involves removing the non-random magnetic dipoles in the GIRON shielding by exposing it to external magnetic fields that are alternating in direction. The magnitude of this alternating field is gradually reduced so that the PMT volume eventually reaches a state in which the magnetic fields are of zero magnitude.
 
 The systematic degaussing procedure has proven to be a reliable method that guarantees reproducible magnetic field conditions. 
 
+%***NOTES***
 
+%assess magnetic shielding, magnetic compensation
 
-***NOTES***
+%GIRON magnetic shielding (http://www.lessemf.com/)
 
-assess magnetic shielding, magnetic compensation
+%GIRON frame
 
-GIRON magnetic shielding (http://www.lessemf.com/)
+%Helmholtz coils, could include the dimensions, wire details, measured resistance
 
-GIRON frame
+%could describe the testing we have done, eg. setting the voltage and measuring the field with a handheld gaussmeter
 
-Helmholtz coils, could include the dimensions, wire details,
-measured resistance
+%Phidget on each gantry
 
-could describe the testing we have done, eg. setting the voltage and
-measuring the field with a handheld gaussmeter
+%coil positioning, maybe outside frame supports for coils, precision measurement of coil position
 
-Phidget on each gantry
+%direction of current and maximum external fields
 
+%consider when synchrotron is on
 
-coil positioning, maybe outside frame supports for coils, precision measurement of coil position
+%control development
 
-direction of current and maximum external fields
+%might have to do each scan more than once (debugging, etc.)
 
-consider when synchrotron is on
-
-control development
-
-might have to do each scan more than once (debugging, etc.)
-
-Magnetic field scans:
-\begin{itemize}
-\item{\bf Scan 0} no current, no GIRON, calculate the the fields that are needed from the coils
-\item{\bf Scan 1} set currents
-\item{\bf Scan 2} one layer of GIRON
-\item{\bf Scan 3} two layers of GIRON
-\end{itemize}
+%Magnetic field scans:
+%\begin{itemize}
+%\item{\bf Scan 0} no current, no GIRON, calculate the the fields that are needed from the coils
+%\item{\bf Scan 1} set currents
+%\item{\bf Scan 2} one layer of GIRON
+%\item{\bf Scan 3} two layers of GIRON
+%\end{itemize}
 
 
 \subsection{Light Tightness/Dark room}
