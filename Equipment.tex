@@ -31,7 +31,7 @@ needs investigation into water compatibility and possible emanation
 
 
 As noted before in the introduction, the PTF measurements are made by moving a pair of optical heads to
-different positions to illuminate the 20\" PMT.  This motion is accomplished by having the optical heads be on
+different positions to illuminate the 20" PMT.  This motion is accomplished by having the optical heads be on
 a pair of moveable gantries.  The gantries provide movement in five different axes: X, Y, Z, rotation and tilt.
 The X, Y and Z motion is on three separate linear stages driven by stepper motors,
 with the dimensions of the stages being XXXYYY, XXXYYY
@@ -77,7 +77,7 @@ magnetometers.  These cards are Phidget 1044 boards, which are readout by USB \c
 We use the accelerometer to measure the tilt of the optical head; the tilt drive system
 otherwise has no other system for measuring the tilt.
 
-The magnetometer is used to measure the magnetic field near the 20\" PMT.  We use the Phidget
+The magnetometer is used to measure the magnetic field near the 20" PMT.  We use the Phidget
 readings to ensure that we are correctly cancelling the ambient magnetic field, as described
 in more detail in Section \ref{Sec:MagFieldCompensation}.
 One problem with the Phidgets is that magnetometers are not designed for high precision or accuracy  measurements.
@@ -119,7 +119,7 @@ The magnetic field compensation set-up in the PTF involves passive compensation 
 
 The magnetic fields in the PTF exhibit large gradients in each direction. The GIRON magnetic shielding helps reduce these gradients to make the magnetic field in the PMT volume more uniform. This is especially important for the z-component of the magnetic field, as the cyclotron at TRIUMF produces large magnetic fields in the z-direction. The magnitude of this magnetic field changes with the distance from the cyclotron, thereby creating a gradient.
 
-The GIRON sheets were purchased from Less EMF. Figures~\ref{fig:bfield_gironeffects_a} and \ref{fig:bfield_gironeffects_b} show how the gradient observed in the z-component of the magnetic field in the PTF is reduced by $ 63\pm3 $\% by adding one layer of GIRON flooring (see \ref{Appendix:MagneticFieldGradientCalculations} for calculations).
+The GIRON sheets were purchased from Less EMF. Figures~\ref{fig:bfield_gironeffects_a} and \ref{fig:bfield_gironeffects_b} show how the gradient observed in the z-component of the magnetic field in the PTF is reduced by $ 70.1\pm3.3 $ \% by adding one layer of GIRON flooring (see \ref{Appendix:MagneticFieldGradientCalculations} for calculations).
 Figure~\ref{fig:bfield_gironeffects_c} shows that adding a second layer of GIRON flooring does not reduce the gradient in the magnetic field. The main reason for keeping the second layer of GIRON flooring is to ensure that there are no gaps between the GIRON sheets.
 %
 \begin{figure}[htbp]
@@ -135,13 +135,13 @@ Figure~\ref{fig:bfield_gironeffects_c} shows that adding a second layer of GIRON
     \subfloat[Two layers of GIRON flooring\label{fig:bfield_gironeffects_c}]{
       \includegraphics[width=0.5\textwidth]{bfield_2_2layerGIRON_coilsOff_z_clrbaredit.pdf}
     }
-  \caption{Plots of the z-component of the magnetic field in the x-y plane containing the center of the PMT volume, with: no GIRON flooring (\ref{fig:bfield_gironeffects_a}), one layer of GIRON flooring (\ref{fig:bfield_gironeffects_b}), and two layers of GIRON flooring (\ref{fig:bfield_gironeffects_c}). The circle outlines the position of the 20\" PMT when it is being measured in the PTF. The GIRON flooring helps reduce the magnetic field gradient along the x-y plane.}
+  \caption{Plots of the z-component of the magnetic field in the x-y plane containing the center of the PMT volume, with: no GIRON flooring (\ref{fig:bfield_gironeffects_a}), one layer of GIRON flooring (\ref{fig:bfield_gironeffects_b}), and two layers of GIRON flooring (\ref{fig:bfield_gironeffects_c}). The circle outlines the position of the 20" PMT when it is being measured in the PTF. The GIRON flooring helps reduce the magnetic field gradient along the x-y plane.}
   \label{fig:bfield_gironeffects}
   \end{center}
 \end{figure}
 %
 
-As shown in Figure~\ref{fig:bfield_gironeffects}, the GIRON flooring helps reduce the magnetic field gradients in the x-y plane. Similarly, GIRON sheets have been wrapped around the PTF tank into a cylindrical shape, as shown in Figure~\ref{fig:coils} to help reduce the magnetic field gradients in the z-direction. Figure~\ref{fig:bfield_gironcylinder} shows how the gradient of the x-component of the magnetic field is reduced from $ 75\pm18 $mG/m to almost no gradient in the z-direction with the cylinder in place.
+As shown in Figure~\ref{fig:bfield_gironeffects}, the GIRON flooring helps reduce the magnetic field gradients in the x-y plane. Similarly, GIRON sheets have been wrapped around the PTF tank into a cylindrical shape, as shown in Figure~\ref{fig:coils} to help reduce the magnetic field gradients in the z-direction. Figure~\ref{fig:bfield_gironcylinder} shows how the gradient of the x-component of the magnetic field is reduced from $ 75\pm18 $ mG/m to almost no gradient in the z-direction with the cylinder in place.
 %
 \begin{figure}[htbp]
   \begin{center}
@@ -202,7 +202,7 @@ Although the geometry of these coil pairs are not exactly that of Helmholtz coil
 
 The use of GIRON magnetic shielding makes it more challenging to quantify the current-to-magnetic-field relations in the PTF. Likewise, calibration of the compensation coils was accomplished through detailed experimentation.
 
-The magnetic fields are mapped at 5-cm intervals in a volume of 0.5 m by 0.5 m by 0.4 m. The scan volume is centered about the center of the 20\" PMT's electron-path trajectory, where the PMT's cross-sectional diameter is largest. By ensuring that the scan volume includes the entire volume of the 20\" PMT, the magnetic field at every point inside the PMT can be interpollated from the measurements.
+The magnetic fields are mapped at 5-cm intervals in a volume of 0.5 m by 0.5 m by 0.4 m. The scan volume is centered about the center of the 20" PMT's electron-path trajectory, where the PMT's cross-sectional diameter is largest. By ensuring that the scan volume includes the entire volume of the 20" PMT, the magnetic field at every point inside the PMT can be interpollated from the measurements.
 
 Figures~\ref{fig:bfield_gironeffects} and \ref{fig:bfield_gironcylinder} are examples of the plots produced through these mangetic field scans. \ref{Appendix:MagneticFieldScanPlots} contains a few more plots for reference.
 
@@ -257,7 +257,7 @@ The systematic degaussing procedure has proven to be a reliable method that guar
 The gantry system is surrounded by a double set of heavy black
 curtains on a overhead rail.  The black curtains provided light tightness.
 As an additional darkening step, the lights in the rest of the PTF room
-are turned off whenever the 20\" PMT is powered on.
+are turned off whenever the 20" PMT is powered on.
 
 
 \subsection{Water System}
@@ -275,7 +275,7 @@ The PTF DAQ uses the MIDAS framework \cite{MIDASRef}.  The main goals of the PTF
 
 \begin{enumerate}
 \item Control of the gantry motors and scan sequencing
-\item Digitization of the 20\" PMT and monitor PMT signals 
+\item Digitization of the 20" PMT and monitor PMT signals 
 \item Environmental monitoring
 \end{enumerate}
 
@@ -286,7 +286,7 @@ We will describe in more detail each of these points in turn in the following se
 
 \subsubsection{PMT Signal Digitization}
 
-To digitize the signals from the 20\", monitor and receiver PMTs we use a fast waveform digitizer; specifically
+To digitize the signals from the 20", monitor and receiver PMTs we use a fast waveform digitizer; specifically
 we use the 500 megasample per second V1730 Module from Caen \cite{V1730Ref}.  The fast, high precision digitization rate ensures that we
 are able to accurately measure the time and charge for single photoelectron pulses from all the PMTs.
 
