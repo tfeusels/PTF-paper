@@ -18,7 +18,17 @@ Therefore, a single layer of GIRON flooring helps reduce the gradient in the z-c
 \newpage
 \section{Magnetic Field Compensation Coil Configuration}
 \label{Appendix:CoilPositions}
+%
 \begin{figure}[h!]
+   \begin{center}
+   \includegraphics[width=0.5\textwidth]{bfield_PTFGIRONposition.png}
+   \caption{Top view of the PTF showing the position of cylindrical GIRON shielding relative to coil 1; dimensions are in millimeters ($\pm2$ mm).}
+   \label{fig:gironpos}
+   \end{center}
+\end{figure}
+%
+%
+\begin{figure}[hp]
    \begin{center}
    \includegraphics[width=0.8\textwidth]{bfield_PTFcoilpositions.png}
    \caption{PTF compensation coil positions; dimensions are in millimeters ($\pm2$ mm).}
@@ -33,10 +43,73 @@ Therefore, a single layer of GIRON flooring helps reduce the gradient in the z-c
 \subsection{Fully Compensated Magnetic Field}
 \label{Appendix:PlotsofFullCompensation}
 
-The following plots show a few magnetic field maps in the x-y plane at different heights for when the magnetic field in the PTF is fully compensated, so that the center of the scan volume has a magnetic field of zero magnitude.
+The following plots show magnetic field maps in the x-y plane at different heights for when the magnetic field in the PTF is fully compensated, so that the center of the scan volume has a magnetic field of zero magnitude. The first three pages are plots of full compensation when the main magnets of TRIUMF's cyclotron are turned off, and the three pages that follow are plots of full compensation when the cyclotron magnets are turned on. 
 
 %
 \begin{figure}[h!]
+  \begin{center}
+    \subfloat[Magnetic field magnitude and vector field\label{fig:bfield_fullcomp500_vec}]{
+      \includegraphics[width=0.5\textwidth]{bfield_full_compensation_cycloOFF1_z500_vec.pdf}
+    }
+    \subfloat[x-component of magnetic field\label{fig:bfield_fullcomp500_x}]{
+      \includegraphics[width=0.5\textwidth]{bfield_full_compensation_cycloOFF1_z500_x.pdf}
+    }\\
+    \vspace{-3 mm}
+    \subfloat[y-component of magnetic field\label{fig:bfield_fullcomp500_y}]{
+      \includegraphics[width=0.5\textwidth]{bfield_full_compensation_cycloOFF1_z500_y.pdf}
+    }
+    \subfloat[z-component of magnetic field\label{fig:bfield_fullcomp500_z}]{
+      \includegraphics[width=0.5\textwidth]{bfield_full_compensation_cycloOFF1_z500_z.pdf}
+    }
+  \caption{Plots of fully compensated magnetic field with the cyclotron off, in the x-y plane at a height just above the top of the PMT.}
+  \label{fig:bfield_fullcomp500_cycloOFF}
+  \end{center}
+\end{figure}
+%
+%
+\begin{figure}[hp]
+  \begin{center}
+    \subfloat[Magnetic field magnitude and vector field\label{fig:bfield_fullcomp700_vec}]{
+      \includegraphics[width=0.5\textwidth]{bfield_full_compensation_z700_vec.pdf}
+    }
+    \subfloat[x-component of magnetic field\label{fig:bfield_fullcomp700_x}]{
+      \includegraphics[width=0.5\textwidth]{bfield_full_compensation_z700_x.pdf}
+    }\\
+    \vspace{-3 mm}
+    \subfloat[y-component of magnetic field\label{fig:bfield_fullcomp700_y}]{
+      \includegraphics[width=0.5\textwidth]{bfield_full_compensation_cycloOFF1_z700_y.pdf}
+    }
+    \subfloat[z-component of magnetic field\label{fig:bfield_fullcomp700_z}]{
+      \includegraphics[width=0.5\textwidth]{bfield_full_compensation_cycloOFF1_z700_z.pdf}
+    }
+  \caption{Plots of fully compensated magnetic field with the cyclotron off, in the x-y plane at the height of the center of the 20'' PMT's electron-path trajectory.}
+  \label{fig:bfield_fullcomp700_cycloOFF}
+  \end{center}
+\end{figure}
+%
+%
+\begin{figure}[hp]
+  \begin{center}
+    \subfloat[Magnetic field magnitude and vector field\label{fig:bfield_fullcomp900_vec}]{
+      \includegraphics[width=0.5\textwidth]{bfield_full_compensation_cycloOFF1_z900_vec.pdf}
+    }
+    \subfloat[x-component of magnetic field\label{fig:bfield_fullcomp900_x}]{
+      \includegraphics[width=0.5\textwidth]{bfield_full_compensation_cycloOFF1_z900_x.pdf}
+    }\\
+    \vspace{-3 mm}
+    \subfloat[y-component of magnetic field\label{fig:bfield_fullcomp900_y}]{
+      \includegraphics[width=0.5\textwidth]{bfield_full_compensation_cycloOFF1_z900_y.pdf}
+    }
+    \subfloat[z-component of magnetic field\label{fig:bfield_fullcomp900_z_cycloOff}]{
+      \includegraphics[width=0.5\textwidth]{bfield_full_compensation_cycloOFF1_z900_z.pdf}
+    }
+  \caption{Plots of fully compensated magnetic field with the cyclotron off, in the x-y plane at the height of the first dynode of the 20'' PMT.}
+  \label{fig:bfield_fullcomp900_cycloOFF}
+  \end{center}
+\end{figure}
+%
+%
+\begin{figure}[hp]
   \begin{center}
     \subfloat[Magnetic field magnitude and vector field\label{fig:bfield_fullcomp400_vec}]{
       \includegraphics[width=0.5\textwidth]{bfield_full_compensation_z400_vec.pdf}
@@ -51,7 +124,7 @@ The following plots show a few magnetic field maps in the x-y plane at different
     \subfloat[z-component of magnetic field\label{fig:bfield_fullcomp400_z}]{
       \includegraphics[width=0.5\textwidth]{bfield_full_compensation_z400_z.pdf}
     }
-  \caption{Plots of fully compensated magnetic field in the x-y plane at a height just above the top of the PMT (z = 0.4 m).}
+  \caption{Plots of fully compensated magnetic field with the cyclotron on, in the x-y plane at a height just above the top of the PMT.}
   \label{fig:bfield_fullcomp400}
   \end{center}
 \end{figure}
@@ -72,7 +145,7 @@ The following plots show a few magnetic field maps in the x-y plane at different
     \subfloat[z-component of magnetic field\label{fig:bfield_fullcomp600_z}]{
       \includegraphics[width=0.5\textwidth]{bfield_full_compensation_z600_z.pdf}
     }
-  \caption{Plots of fully compensated magnetic field in the x-y plane at the height of the center of the 20'' PMT's electron-path trajectory (z = 0.6 m).}
+  \caption{Plots of fully compensated magnetic field with the cyclotron on, in the x-y plane at the height of the center of the 20'' PMT's electron-path trajectory.}
   \label{fig:bfield_fullcomp600}
   \end{center}
 \end{figure}
@@ -93,7 +166,7 @@ The following plots show a few magnetic field maps in the x-y plane at different
     \subfloat[z-component of magnetic field\label{fig:bfield_fullcomp800_z}]{
       \includegraphics[width=0.5\textwidth]{bfield_full_compensation_z800_z.pdf}
     }
-  \caption{Plots of fully compensated magnetic field in the x-y plane at the height of the first dynode of the 20'' PMT (z = 0.8 m).}
+  \caption{Plots of fully compensated magnetic field with the cyclotron on, in the x-y plane at the height of the first dynode of the 20'' PMT.}
   \label{fig:bfield_fullcomp800}
   \end{center}
 \end{figure}
